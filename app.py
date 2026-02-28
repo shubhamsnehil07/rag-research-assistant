@@ -9,10 +9,11 @@ from pathlib import Path
 from datetime import datetime
 import json
 
-from rag_system_enhanced import EnhancedRAGSystem
+
 from ingestion import PDFProcessor
-from embeddings import EmbeddingGenerator
-from vector_store import VectorStore
+from core.rag_system_pro import ProductionRAGSystem
+from core.embeddings import EmbeddingGenerator
+from core.vector_store import VectorStore
 
 # ==============================================================================
 # PAGE CONFIGURATION

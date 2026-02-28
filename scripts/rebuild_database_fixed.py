@@ -2,9 +2,9 @@
 Rebuild database with abstract-aware processing
 """
 
-from ingestion_with_abstract import PDFProcessorWithAbstract
-from embeddings import EmbeddingGenerator
-from vector_store import VectorStore
+from ingestion.ingestion_with_abstract import PDFProcessorWithAbstract
+from core.embeddings import EmbeddingGenerator
+from core.vector_store import VectorStore
 import glob
 import os
 import shutil

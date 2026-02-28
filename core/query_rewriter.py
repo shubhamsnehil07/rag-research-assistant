@@ -2,7 +2,7 @@
 Query Rewriter to improve retrieval
 """
 
-from llm_handler import OllamaLLM
+from core.llm_handler import OllamaLLM
 from typing import List
 
 class QueryRewriter:

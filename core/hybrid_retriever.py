@@ -5,8 +5,8 @@ Hybrid Retriever combining BM25 (sparse) and Dense (embedding) search
 import numpy as np
 from typing import List, Dict, Tuple
 from rank_bm25 import BM25Okapi
-from embeddings import EmbeddingGenerator
-from vector_store import VectorStore
+from core.embeddings import EmbeddingGenerator
+from core.vector_store import VectorStore
 
 class HybridRetriever:
     """

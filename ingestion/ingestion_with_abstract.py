@@ -7,7 +7,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from typing import List, Dict
 import re
 import os
-from extract_abstract import extract_abstract_smart
+from ingestion.extract_abstract import extract_abstract_smart
 
 class PDFProcessorWithAbstract:
     """

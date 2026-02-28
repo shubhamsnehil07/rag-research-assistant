@@ -3,13 +3,13 @@ Production-Grade RAG System with All Upgrades
 Combines: Section-aware chunking + Hybrid retrieval + Reranking + Query rewriting
 """
 
-from embeddings import EmbeddingGenerator
-from vector_store import VectorStore
-from llm_handler import OllamaLLM
-from hybrid_retriever import HybridRetriever
-from reranker import CrossEncoderReranker
-from query_rewriter import QueryRewriter
-from citation_manager import CitationManager, AnswerQualityChecker
+from core.embeddings import EmbeddingGenerator
+from core.vector_store import VectorStore
+from core.llm_handler import OllamaLLM
+from core.hybrid_retriever import HybridRetriever
+from core.reranker import CrossEncoderReranker
+from core.query_rewriter import QueryRewriter
+from core.citation_manager import CitationManager, AnswerQualityChecker
 from typing import List, Dict
 import os
 
