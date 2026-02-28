@@ -34,6 +34,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system for analyzing res
 | **UI** | Streamlit |
 | **Language** | Python 3.11 |
 
+
 ## 📋 Prerequisites
 
 - Python 3.11+
@@ -44,14 +45,14 @@ A production-ready Retrieval-Augmented Generation (RAG) system for analyzing res
 
 ### 1. Clone the Repository
 
-\`\`\`bash
+``` bash
 git clone https://github.com/yourusername/rag-research-assistant.git
 cd rag-research-assistant
-\`\`\`
+```
 
 ### 2. Create Virtual Environment
 
-\`\`\`bash
+```bash
 python -m venv venv
 
 # Windows
@@ -59,13 +60,13 @@ venv\\Scripts\\activate
 
 # Mac/Linux
 source venv/bin/activate
-\`\`\`
+```
 
 ### 3. Install Dependencies
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4. Install and Start Ollama
 
@@ -74,36 +75,36 @@ pip install -r requirements.txt
 2. Install Ollama
 3. Open terminal and run:
 
-\`\`\`bash
+```bash
 ollama serve
-\`\`\`
+```
 
 4. In a **new terminal**, pull the model:
 
-\`\`\`bash
+```bash
 ollama pull llama3.2
-\`\`\`
+```
 
 ### 5. Add Your PDF
 
 Place your research paper PDFs in the `data/` folder:
 
-\`\`\`bash
+```bash
 data/
   └── your_paper.pdf
-\`\`\`
+```
 
 ### 6. Build Vector Database
 
-\`\`\`bash
+```bash
 python scripts/rebuild_database_fixed.py
-\`\`\`
+```
 
 ### 7. Launch the App
 
-\`\`\`bash
+```bash
 streamlit run app.py
-\`\`\`
+```
 
 The app will open in your browser at `http://localhost:8501`
 
@@ -132,7 +133,7 @@ The app will open in your browser at `http://localhost:8501`
 
 ## 🏗️ Architecture
 
-\`\`\`
+```
 ┌─────────────┐
 │   User      │
 │  Question   │
@@ -170,7 +171,7 @@ The app will open in your browser at `http://localhost:8501`
 │   Answer + Citations            │
 │   + Confidence Score            │
 └─────────────────────────────────┘
-\`\`\`
+```
 
 ## 📊 Performance
 
@@ -207,7 +208,7 @@ Every answer includes:
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 rag-research-assistant/
 ├── app.py                      # Streamlit UI
 ├── core/                       # Core modules
@@ -219,7 +220,7 @@ rag-research-assistant/
 │   └── ingestion_with_abstract.py
 ├── scripts/                    # Utility scripts
 └── data/                       # PDF storage
-\`\`\`
+```
 
 ## 🐛 Troubleshooting
 
@@ -234,17 +235,17 @@ rag-research-assistant/
 
 **Solution:**
 Run the database builder:
-\`\`\`bash
+```bash
 python scripts/rebuild_database_fixed.py
-\`\`\`
+```
 
 ### Slow responses
 
 **Solution:**
 Use a smaller/faster model:
-\`\`\`bash
+```bash
 ollama pull phi3
-\`\`\`
+```
 
 Then update `app.py` to use `phi3` instead of `llama3.2`.
 
@@ -263,9 +264,9 @@ MIT License - see LICENSE file for details
 
 ## 👨‍💻 Author
 
-**Shubham**
+**Shubham Snehil**
 - GitHub: [@shubhamsnehil07](https://github.com/shubhamsnehil07)
-- Built as a placement project demonstrating ML engineering skills
+- Built as a project demonstrating ML engineering skills
 
 ## 🙏 Acknowledgments
 
@@ -283,4 +284,3 @@ MIT License - see LICENSE file for details
 ---
 
 **⭐ If you found this helpful, please star the repo!**
-\`\`\`
