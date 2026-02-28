@@ -22,7 +22,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system for analyzing res
 ![Demo Screenshot](docs/screenshots/demo.png)
 
 ## 🛠️ Tech Stack
-```
+\`\`\`
 | Component | Technology |
 |-----------|------------|
 | **Framework** | LangChain |
@@ -33,7 +33,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system for analyzing res
 | **Reranking** | Cross-Encoder (MS MARCO) |
 | **UI** | Streamlit |
 | **Language** | Python 3.11 |
-```
+\`\`\`
 
 ## 📋 Prerequisites
 
