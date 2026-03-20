@@ -46,7 +46,7 @@ A production-ready Retrieval-Augmented Generation (RAG) system for analyzing res
 ### 1. Clone the Repository
 
 ``` bash
-git clone https://github.com/yourusername/rag-research-assistant.git
+git clone https://github.com/shubhamsnehil07/rag-research-assistant.git
 cd rag-research-assistant
 ```
 
